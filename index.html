@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <title>Fantasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: lavender;
+        }
+        .navbar-nav {
+            padding-right: 50px;
+        }
+        .nav-item {
+            padding-right: 20px;
+        }
+        .carousel-item img {
+            height: 100vh;
+        }
+        section#home, section#info, section#about {
+            padding:50px 0px;
+        }
+        section#about, section#contact {
+            color: white;
+        }
+        #profile {
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <nav id="navbar-custom" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" style="height: 8vh; margin: -5px 0px;">
+                Fantasy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <!--carousel-->
+    <section id="home">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/img1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--info-->
+    <section id="info">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center" style="padding: 50px;">Information</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card" data-aos="zoom-in-down">
+                        <img src="images/img5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card" data-aos="zoom-in-down">
+                        <img src="images/img5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card" data-aos="zoom-in-down">
+                        <img src="images/img5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card" data-aos="zoom-in-down">
+                        <img src="images/img5.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="bg-dark">
+        <div class="container">
+            <h1 class="text-center" style="padding-bottom: 50px;" data-aos="fade-up">About</h1>
+            <img id="profile" class="rounded mx-auto d-block rounded-5 border border-white border-5 bg-dark" src="images/logo.png" alt="" data-aos="flip-down">
+            <div class="text-center" style="padding: 50px;" data-aos="zoom-in-up">
+                <h2>Profile Mahasiswa</h2>
+                <p>5520120041</p>
+                <p>Achmad Fauzi Rachmadi</p>
+                <p>IF B 2020</p>
+                <p>Teknik Informatika</p>
+                <p>Universitas Suryakancana</p>
+            </div>
+            <div class="row" style="padding-bottom: 50px;">
+                <div class="col-md-6 col-sm-12">
+                    <p style="padding: 20px 0px;" data-aos="fade-right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis vel unde nam blanditiis officia, possimus recusandae accusantium non, culpa maxime numquam eaque debitis quod eum laudantium pariatur eligendi dignissimos.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vero provident soluta. Nihil sequi quisquam quia eveniet hic delectus necessitatibus corporis unde recusandae obcaecati accusamus, maxime laboriosam beatae possimus odio!
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="images/img1.jpg" class="img-rounded" width="90%" alt="" data-aos="fade-left">
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 50px;">
+                <div class="col-md-6">
+                    <img src="images/img4.jpg" class="img-rounded" width="90%" alt="" data-aos="fade-right">
+                </div>
+                <div class="col-md-6">
+                    <p style="padding: 20px 0px;" data-aos="fade-left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis vel unde nam blanditiis officia, possimus recusandae accusantium non, culpa maxime numquam eaque debitis quod eum laudantium pariatur eligendi dignissimos.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vero provident soluta. Nihil sequi quisquam quia eveniet hic delectus necessitatibus corporis unde recusandae obcaecati accusamus, maxime laboriosam beatae possimus odio!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--location-->
+    <section id="location">
+        <div class="container-fluid">
+            <h1 class="text-center" style="padding:50px;" data-aos="fade-up">Location</h1>
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10674.763549968011!2d107.13669360128542!3d-6.802148287832404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852e697990cef%3A0x2ddbb36bc8af404e!2sUniversitas%20Suryakancana!5e0!3m2!1sid!2sid!4v1664872760717!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact">
+        <div class="container-fluid bg-dark" style="padding: 50px;">
+            <div class="container">
+                <h1 style="padding-bottom: 20px;">Contact</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque enim aliquam dicta ut blanditiis eos nemo architecto accusantium, eveniet aut voluptate, pariatur corrupti autem placeat qui eligendi vero! Fugiat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque enim aliquam dicta ut blanditiis eos nemo architecto accusantium, eveniet aut voluptate, pariatur corrupti autem placeat qui eligendi vero! Fugiat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque enim aliquam dicta ut blanditiis eos nemo architecto accusantium, eveniet aut voluptate, pariatur corrupti autem placeat qui eligendi vero! Fugiat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque enim aliquam dicta ut blanditiis eos nemo architecto accusantium, eveniet aut voluptate, pariatur corrupti autem placeat qui eligendi vero! Fugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="container-fluid" style="height:50px">
+        <div class="row" style="padding-top:15px">
+            <p class="text-center">Copyright@2022</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
